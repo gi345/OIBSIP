@@ -1,0 +1,52 @@
+.calculator {
+    width: 250px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #282c34;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    font-size: 2rem;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Styling for the 'AC' button */
+button:first-child {
+    background-color: #e74c3c; /* Distinct red color for AC button */
+    color: white;
+}
+
+/* Styling for other function buttons like '+', '-', '*', '/', '=' */
+button:nth-child(4n) {
+    background-color: #61dafb; /* Light blue for operators */
+    color: black;
+}
